@@ -2,7 +2,7 @@ class ActionsController < ApplicationController
 
     def index
         actions = Action.all 
-        render json: ActionSerializer.new(actions, {include: [:category]})
+        render json: ActionSerializer.new(action)
     end
 
     def show
